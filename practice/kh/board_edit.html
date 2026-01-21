@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./board_detail.css">
+    <link rel="stylesheet" href="./board_edit.css">
     <link rel="stylesheet" href="layout.css">
-    <script defer src="./board_detail.js"></script>
+    <script defer src="./board_edit.js"></script>
     <title>KH</title>
 </head>
 <body>
@@ -21,14 +21,10 @@
         <a href="">문의게시판</a>
     </nav>
     <main>
-        <h1>게시글 상세 조회</h1>
-        <div>ttttitle</div>
-        <div>contenttt</div>
-        <div>createdAt</div>
-        <div class="btn-area">
-            <button onclick="location.href='./board_edit.html';">수정하기</button>
-            <button onclick="deleteBoard();">삭제하기</button>
-        </div>
+        <h1>게시글 수정</h1>
+        <input type="text" name="title" value="저녁드실분???">
+        <textarea name="content">메뉴는 제육볶음</textarea>
+        <button onclick="editBoard();">변경사항 저장</button>
     </main>
     
 </body>
