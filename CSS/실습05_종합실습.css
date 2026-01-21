@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgray;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 3fr 1fr 7fr 0.8fr 3fr;
+    grid-template-columns: 1fr;
+}
+div{
+    border: 1px solid black;
+}
+#header{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#search-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search-area>input{
+    width: 500px;
+    height: 40px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+#search-area>button{
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-left: 20px;
+    border: 5px double orange;
+    background-color: orangered;
+}
+#navi{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+#navi>a{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#navi>a:hover{
+    font-size: 2em;
+    animation-name: jelly;
+    animation-duration: 0.8s;
+
+}
+@keyframes jelly {
+    0% {
+        transform: scale(1, 1) skew(0deg, 0deg);
+    }
+    25% {
+        transform: scale(1.15, 0.9) skew(-6deg, 2deg);
+    }
+    50% {
+        transform: scale(0.9, 1.2) skew(8deg, -4deg);
+    }
+    75% {
+        transform: scale(1.08, 0.95) skew(-3deg, 1deg);
+    }
+    100% {
+        transform: scale(1, 1) skew(0deg, 0deg);
+    }
+}
+#main{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#aside{
+    display: grid;
+    grid-template-rows: 3fr 7fr;
+    grid-template-columns: 1fr;
+}
+#login-area{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr;
+}
+#login-area-bottom{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+#login-area-bottom>button{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#login-area-top{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 7fr 3fr;
+    
+}
+#login-area-top>button{
+    grid-row: span 2;
+}
+
+#footer-top{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(14,1fr);
+    place-items: center center;
+}
+#footer-top > span{
+    font-size: 1.2em;
+    font-weight: 700;
+    white-space: nowrap;
+}
+#navi>a:nth-child(3){
+    /* 자식요소 스스로 위치설정 self기능 */
+    align-self: start;
+    justify-self: start;
+}
+    

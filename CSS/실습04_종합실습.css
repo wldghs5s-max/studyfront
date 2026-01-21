@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+#header{
+    height: 15%;
+    border: 1px solid gray;
+    display: flex;
+    box-sizing: border-box;
+}
+#header>div{
+    height: 100%;
+    border: 1px solid gray;
+}
+#header>div:nth-child(1){
+    width: 20%;
+}
+#header>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+#header input{
+    width: 70%;
+    height: 20%;
+}
+#header button{
+    width: 10%;
+    height: 25%;
+}
+#header>div:nth-child(3){
+    width: 18%;
+}
+#nabi{
+    width: 100%;
+    height: 5%;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: 600;
+    color: rgb(133, 133, 4);
+    font-size: larger;
+}
+#nabi>div{
+    height: 100%;
+    border: 1px solid gray;
+}
+
+#nabi>div:nth-child(1){width: 15%;}
+#nabi>div:nth-child(2){width: 15%;}
+#nabi>div:nth-child(3){width: 15%;}
+#nabi>div:nth-child(4){width: 15%;}
+#nabi>div:nth-child(5){width: 15%;}
+#nabi>div:nth-child(6){width: 25%;}
+#main{
+    width: 100%;
+    height: 62%;
+    border: 1px solid gray;
+    display: flex;
+    box-sizing: border-box;
+}
+#main>div{
+    height: 100%;
+    border: 1px solid gray;
+}
+#main>div:nth-child(1){width: 15%;}
+#main>div:nth-child(2){width: 65%;}
+#main>div:nth-child(3){width: 20%;}
+
+#login>div{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+}
+#login>div:nth-child(1){height: 15%;}
+#input>div{
+    height: 100%;
+    border: 1px solid gray;
+}
+#input>div:nth-child(1){width: 70%;}
+#input2>div{
+    width:100%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+#input2>div:nth-child(1){height: 50%;}
+#input2>div:nth-child(2){height: 50%;}
+
+#input>div:nth-child(2){
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#login>div:nth-child(2){height: 5%;}
+  #sign>div{
+    text-align: center;
+    height: 100%;
+    border: 1px solid gray;
+}
+#sign>div:nth-child(1){width: 40%;}
+#sign>div:nth-child(2){width: 60%;}
+
+#login>div:nth-child(3){height: 80%;}
+
+
+#nabi2{
+    width: 100%;
+    height: 4%;
+    border: 1px solid gray;
+    display: flex;
+    box-sizing: border-box;
+    color: black;
+}
+#nabi2>div{
+    height: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    font-weight: 500;
+    
+}
+#nabi2>div:nth-child(1){width: 10%;}
+#nabi2>div:nth-child(2){width: 10%;}
+#nabi2>div:nth-child(3){width: 10%;}
+#nabi2>div:nth-child(4){width: 10%;}
+#nabi2>div:nth-child(5){width: 60%;}
+#infor{
+    width: 100%;
+    height: 11%;
+    border: 1px solid gray;
+    display: flex;
+    box-sizing: border-box;
+    font-size: 10px;
+    
+}
+#infor2{
+    width: 100%;
+    height: 3%;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-align: center;
+}
+#login button{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+#login input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: orange;
+}
+a:hover:visited{
+    color: blue;
+    cursor: pointer;
+
+}
+a:visited{
+    text-decoration: none;
+    color: orange;
+}
+

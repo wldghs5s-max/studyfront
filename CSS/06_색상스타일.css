@@ -1,0 +1,27 @@
+h1{
+    background-color: red;
+    background-color: rgb(255, 0, 255);
+    background-color: #ff00ff50;
+}
+#target{
+    width: 300px;
+    height: 300px;
+    border: 5px dashed black;
+
+    font-size: 3em;
+    background-image: url(https://placehold.co/100x150);
+    /* 이미지 반복 설정 */
+    background-repeat: repeat;
+    
+    /* 이미지 크기 설정 cover,contain */
+    /* background-size: contain; */
+
+    /* 이미지 위치 설정 top, center, % 명령 가능 */
+    /* background-position: 50% 10%; */
+
+    /* 이미지 배치 기준 설정 */
+    background-origin: border-box;
+
+    background-attachment: fixed;
+
+}

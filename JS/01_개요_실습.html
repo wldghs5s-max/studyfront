@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개요 실습</title>
+    <style>
+        .red{background-color: red;}
+        .blue{background-color: rgb(117, 204, 228);}
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+        }
+        body{
+            height: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <h1>개요 실습</h1>
+
+    <hr>
+    <h3>1. 색상 조절하기</h3>
+
+    <div id="div01" class="box">디브01</div>
+    <input type="color" id="input01">
+    <button onclick="changeColor();">색상변경</button>
+
+    <script>
+        function changeColor(){
+            x = document.querySelector("#div01");
+            y = document.querySelector("#input01");
+            
+            x.style.backgroundColor = y.value;
+            
+        }
+    </script>
+
+    <h3>2. 크기 변경하기</h3>
+    <div id="div02" class="box">디브02</div>
+    <input type="range" id="input02" value="100" max="300" step="50">
+    <button onclick="changeSize();">크기변경</button>
+
+    <script>
+        function changeSize(){
+            x = document.querySelector("#div02");
+            y = document.querySelector("#input02");
+            x.style.width = y.value + "px";
+            x.style.height = y.value+ "px";
+        }
+    </script>
+
+    <h3>3. HTML 태그에 접근</h3>
+    <h3>4. 테이블 만들기</h3>
+    <button onclick="generateTable();">테이블 생성</button>
+    <div id="div04"></div>
+    <script>
+        function generateTable(){
+            div04 = document.querySelector("#div04");
+            n = prompt("숫자 : ");
+            str = "";
+            str += "<table border='1'>";
+            for(j=0; j<n; ++j){
+                str +="<tr>";
+                for(i=0; i<n; ++i){
+                    str+="<td>ㅋㅋㅋ</td>";
+                }str += "</tr>";
+            }
+            
+            str += "</table>";
+//      아래 구문은 div04에 누적된 str 문구를 HTML형식으로 넣어주라는뜻            
+            div04.innerHTML = str;
+        }
+    </script>
+    <div>
+        <table>
+            <tr>
+                <td>d</td>
+                <td>d</td>
+                <td>d</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>d</td>
+                <td>dd</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+</body>
+</html>

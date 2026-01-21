@@ -1,0 +1,55 @@
+table{
+    border: 1px solid black;
+    font-size: 1.5em;
+    border-collapse: collapse;
+
+}
+
+table > thead{
+    background-color: black;
+    border-bottom: 1px dashed black;
+    color: white;
+}
+
+table > tbody > tr :hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+table > tbody > tr > td{
+
+    border: 1px solid black;
+
+}
+
+#todoDetailArea{
+    width: 500px;
+    height: 500px;
+    border: 3px solid black;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+
+
+}
+#modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.493);
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#modal.active{
+    display: flex;
+}
+
+input[type=checkbox] {
+
+zoom: 2;
+
+}
+

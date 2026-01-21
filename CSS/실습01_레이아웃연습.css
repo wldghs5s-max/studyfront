@@ -1,0 +1,58 @@
+body{
+    margin: 0;    
+}
+
+.wrapper{
+    /* 100v는 화면전체 */
+    width: 100vw;
+    height: 100vh;
+    border: 5px solid red;
+    box-sizing: border-box
+}
+
+.wrapper > div{
+    border: 3px dashed red;
+    box-sizing: border-box
+    
+}
+.wrapper > div:nth-child(1){height: 10%;}
+.wrapper > div:nth-child(2){height: 5%;}
+.wrapper > div:nth-child(3){height: 75%;}
+.wrapper > div:nth-child(4){height: 10%;}
+
+#header{
+    display: flex;
+}
+
+#header>div{
+    border: 1px solid blue; 
+}
+#header > div:nth-child(1){
+    width: 15%;
+    height: 100%;
+}
+#header > div:nth-child(2){
+    width: 75%;
+    height: 100%;}
+#header > div:nth-child(3){
+    width: 10%;
+    height: 100%;}
+#main{
+    display: flex;
+}
+#main>div{
+    border: 1px solid blue;
+}
+#main>div:nth-child(1){
+    width: 10%;
+    height: 100%;
+}
+#main>div:nth-child(2){
+    width: 75%;
+    height: 100%;
+}
+
+#main>div:nth-child(3){
+    width: 15%;
+    height: 100%;
+}

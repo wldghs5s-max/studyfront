@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개요과제</title>
+    
+</head>
+<body>
+    <h1>테이블만들기</h1>
+    
+    <button onclick="createTable();">테이블생성버튼</button>
+    <div id="tdiv"></div>
+    <hr>
+    <input type="color" id="input01">
+    <button onclick="changeColor();">색상 변경</button>
+    <script>
+        let n;
+        function createTable(){
+            tdiv = document.querySelector("#tdiv");
+            n = prompt("테이블크기 : ");
+            str = "";
+            str += "<table border='1'>";
+            for(j=0;j<n; ++j){
+                str += "<tr>";
+                for(i=0;i<n;++i){
+                    str += "<td><button class = 'gob'onclick='buttonClick(this.innerHTML)';>"+n+"*"+n+"</button></td>";
+                 }
+                 str += "</tr>";    
+            }
+            str += "</table>";
+            tdiv.innerHTML = str;
+            
+            if(n==1){
+                x = document.querySelector("#tdiv");
+                x.style.width = "45px";
+                x.style.height = "35px";
+            }
+            if(n==2){
+                x = document.querySelector("#tdiv");
+                x.style.width = "88px";
+                x.style.height = "68px";
+            }
+            if(n==3){
+                x = document.querySelector("#tdiv");
+                x.style.width = "130px";
+                x.style.height = "98px";
+            }
+            if(n==4){
+                x = document.querySelector("#tdiv");
+                x.style.width = "172px";
+                x.style.height = "127px";
+            }
+            if(n==5){
+                x = document.querySelector("#tdiv");
+                x.style.width = "215px";
+                x.style.height = "162px";
+            }
+            if(n==6){
+                x = document.querySelector("#tdiv");
+                x.style.width = "256px";
+                x.style.height = "190px";
+            }
+            if(n==7){
+                x = document.querySelector("#tdiv");
+                x.style.width = "298px";
+                x.style.height = "220px";
+            }
+
+        }
+        function buttonClick(x){
+            document.querySelector(".gob").innerText = eval(x);
+            console.log(x);
+            
+        }
+        
+    </script>
+    
+
+    <script>
+        function changeColor(){
+            x = document.querySelector("#tdiv");
+            y = document.querySelector("#input01");
+            x.style.backgroundColor = y.value;
+        }
+    </script>
+
+    <hr>
+    <input type="range" value="100" max="500" id="input02">
+    <button onclick="sizeUpdown();">크기 변경</button>
+    <script>
+        function sizeUpdown(){
+            x = document.querySelector("#tdiv");
+            y = document.querySelector("#input02");
+            x.style.width = y.value + "px";
+            x.style.height = y.value + "px";
+        }
+
+    </script>
+    <div>기대값 계산기</div>
+    <input type="text" id="input03" placeholder="성공확률(%)">
+    <br>
+    <input type="text" id="input04" placeholder="시행횟수">
+    <button onclick="solution();">계산하기</button>
+    <br>
+    <textarea name="" id="result"></textarea>
+    <script>
+        function solution(){
+            const x = document.querySelector("#input03").value;
+            const y = document.querySelector("#input04").value;
+            const f = (100-x)/100
+            let result = Math.pow(f,y);
+            const s = 1-result;
+            document.querySelector("#result").innerHTML = s*100+"%";     
+        }
+    </script>
+
+
+</body>
+</html>

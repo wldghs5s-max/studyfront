@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    display: flex;
+}
+div{
+}
+#yout{
+    width: 80vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    position: relative;
+}
+aside{
+    width: 20vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40px 40px 40px 5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    font-size: 1.3em;
+    align-items: center;
+}
+aside>div{
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+}
+
+#subs{
+    position: relative;
+}
+
+header{
+    width: 80%;
+    height: 150px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 7fr 2fr;
+    position: sticky;
+    left: 20%;
+}
+header > div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header > div:nth-child(1)>input{
+    width: 70%;
+    height: 40px;
+    border-radius: 20px;
+}
+#sound-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+#harfcircle{
+    width: 60px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 0px 20px 20px 0px;
+}
+header > div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header > div:nth-child(2)>button{
+    width: 60px;
+    height: 40px;
+    white-space: nowrap;
+    font-weight: 700;
+}
+#om{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#om>button{
+    height: 35px;
+    border-radius: 10px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+#long{
+    top: 150px;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    display: flex;
+}
+#long>div:nth-child(1){
+    width: 33%;
+}
+#long>div:nth-child(2){
+    width: 33%;
+}
+#long>div:nth-child(3){
+    width: 34%;
+}
+#short{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    top: 426px;
+    grid-template-rows: 1fr 7fr;
+    grid-template-columns: repeat(5,1fr);
+}
+#short>div:nth-child(1){
+    grid-column: span 4;
+    place-items: center;
+    place-content: center;
+    font-size: 2em;
+    font-weight: 700;
+}
+#short>div:nth-child(3){
+    width: 100%;
+    height: 100%;
+
+}
+ul{
+    list-style: none;
+}

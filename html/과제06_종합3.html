@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과제06_종합3</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <form action="서버">
+    필수 입력 사항
+    <table>
+        <tr>
+            <th>ID</th>
+            <td ><input type="text" placeholder="아이디 10글자 이내"></td>
+            <td><input type="button" value="중복확인"></td>
+        </tr>
+        <tr>
+            <th>비밀번호</th>
+            <td><input type="text" placeholder="영문, 숫자, 특수문자 포함 8자 이상"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>비밀번호 확인</th>
+            <td><input type="text"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><input type="text"></td>
+            <td>
+                <select>
+            <option>직접입력</option></select>
+        </td>
+        </tr>
+        
+    </table>
+    <label for="">추가 정보</label>
+    <br>
+    <label for="">프로필 사진 : </label><input type="file" value="파일 선택">
+    <br><br>
+    <!-- radio의 경우 레이블로 태그째 감싸는 경우와 id지정후 별도입력방법이 존재 -->
+    성별 : 
+    <label>
+        <input type="radio" name="gender" value="남자" checked>남자
+    </label>
+    <input type="radio" name="gender" value="여자" id="F"><label for="F">여자</label>
+    <br><br>
+    <label for="">생년월일 : </label>
+    <input type="date">
+    <br><br>
+    취미 : <br>
+    <label><input type="checkbox" name="hobby">게임</label>
+    <label><input type="checkbox" name="hobby">운동</label>
+    <label><input type="checkbox" name="hobby">취미</label><br>
+    <label><input type="checkbox" name="hobby">댄스</label>
+    <label><input type="checkbox" name="hobby">노래</label>
+    <label><input type="checkbox" name="hobby" checked>공부</label><br>
+    <label><input type="checkbox" name="hobby">기타 : </label>
+    <input type="text">
+    <br><br>
+    자기소개 <br>
+    <textarea rows="5" cols="40"></textarea><br>
+    <button>회원가입</button>
+    <input type="reset" value="다시입력">
+    <input type="button" value="이전으로">
+    
+
+
+    </form>
+</body>
+</html>

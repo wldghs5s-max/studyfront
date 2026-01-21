@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <h1>ToDo</h1>
+
+    <hr>
+
+    <h2>등록</h2>
+    <input type="text" name="title" placeholder="할일">
+    <input type="button" value="할일추가" onclick="insertTodo();">
+
+    <h2>목록</h2>
+    <button onclick="displayVoList();">조회</button>
+    <table id="voListTable">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>할일</th>
+                <th onclick="deleteTodos();">삭제</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+
+    </table>
+
+    <hr>
+    <h2>상세조회</h2>
+    <div id="modal" onclick="closeModal();">
+        <!-- event 없에는 법칙 같은것.. 걍 외워야...ㅠ -->
+        <div id="todoDetailArea" onclick="f01(event);">
+            <label for="">번호 : </label><span id="todoDetailNo">???</span>
+            <br>
+            <label for="">제목 : </label><span id="todoDetailTitle">???</span>
+            <br>
+            <label for="">완료여부 : </label><span id="todoDetailDone">???</span>
+            <br>
+            <label for="">생성일시 : </label><span id="todoDetailCreatedAt">???</span>
+            <br>
+        </div>
+    </div>
+</body>
+</html>

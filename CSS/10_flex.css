@@ -1,0 +1,32 @@
+h1{
+    background-color: red;
+}
+.abc{
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+
+    display: flex;
+    /* x축기준 가운데정렬 c s e f spa */
+    justify-content: center;
+    /* y축기준 가운데정렬 */
+    align-items: center;
+    /* 중심축 설정 c r 기본값은 row*/
+    flex-direction: row;
+    /* 찌그러지지 않게 자동 줄넘기기 */
+    /* flex-wrap: wrap; */
+    /* 축간 간격 c s e f spa*/
+    align-content: center;
+    flex-wrap: wrap;
+}
+.abc>div{
+    width: 100px;
+    height: 100px;
+    border: 3px solid gray;
+}
+.abc > div:nth-child(5) {
+    background-color: green;
+    align-self: flex-start;
+    /* 오더 기본값은 0 */
+    order: -1;
+}

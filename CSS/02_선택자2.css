@@ -1,0 +1,63 @@
+h1{
+    background-color: red;
+}
+/* ,를 통해 한번에 여러가지 선택자 지정가능
+모든것은* */
+div[name="div04"],
+div[name="div01"]{
+    color: blue;
+    font-weight: 900;
+}
+
+#test02 > h4{
+    background-color: red;
+}
+#test03~h5 {
+    background-color: red;
+}
+#test04-1:hover{
+    background-color: violet;
+}
+#test04-2:active{
+    background-color: violet;
+}
+#test05-1:checked{
+    width: 50px;
+    height: 50px;
+}
+#test05-2:focus{
+    background-color: gray;
+}
+.test05:enabled{
+    border: 3px solid red;
+}
+#test06{
+    border: 5px solid black;
+}
+#test06 > p:nth-child(3){
+    background-color: gray;
+}
+#test07{
+    border: 3px dashed black;
+}
+/* nth-of-type시 (숫자) */
+#test07 > p:last-of-type{
+    background-color: gray;
+}
+/* first-letter , first-line, selection등 사용 가능 */
+#test08 > p::before{
+    content: "zzz";
+    background-color: orange;
+}
+#test08 > p::after{
+    content:"zzz";
+    background-color: rebeccapurple;
+}
+#test10>p.kh{
+    background-color: skyblue;
+
+}
+#test10>p:not(.kh){
+    background-color: blue;
+
+}
